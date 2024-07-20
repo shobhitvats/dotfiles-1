@@ -1,9 +1,9 @@
 { lib, inputs, mypkgs, system, ... }:
 {
-  inspiron =
+  nixos =
     let
-      hostname = "inspiron";
-      username = "vignesh";
+      hostname = "nixos";
+      username = "shobhit";
       dotdir = "dotfiles";
       pkgs = import inputs.nixpkgs {
         inherit system;

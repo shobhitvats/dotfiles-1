@@ -6,7 +6,7 @@
 
     ./hardware-configuration.nix
 
-    ../../nixos/fingerprint.nix
+    # ../../nixos/fingerprint.nix
     ../../nixos/flatpak.nix
     ../../nixos/hypridle.nix
     ../../nixos/hyprland.nix
@@ -16,6 +16,7 @@
     ../../nixos/security.nix
     ../../nixos/sound.nix
     ../../nixos/thermals.nix
+    ../../nixos/nvidia.nix
   ];
 
   # - nix Settings
@@ -69,13 +70,14 @@
     # - Bootloader
     loader = {
       efi = {
-        canTouchEfiVariables = true;
+        # canTouchEfiVariables = true;
         efiSysMountPoint = "/boot";
       };
       grub = {
         devices = [ "nodev" ];
         efiSupport = true;
         enable = true;
+        efiInstallAsRemovable = true;
       };
     };
   };

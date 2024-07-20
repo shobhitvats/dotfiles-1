@@ -22,8 +22,8 @@
     # - git
     git = {
       enable = true;
-      userName = "Vignesh Pai";
-      userEmail = "vigneshpai2003@gmail.com";
+      userName = "Shobhit vats";
+      userEmail = "vshobhitvats1122@gmail.com";
     };
 
     # - direnv for Development Environments
@@ -124,7 +124,7 @@
     bottles # - Wine
     gnome-connections # - Remote Connections
     filezilla # - FTP Client
-    master.vscode # - Text Editors
+    vscode # - Text Editors
     zed-editor
     gnome-text-editor
 
@@ -175,6 +175,9 @@
     ### - Games
     gnome.gnome-mines # - Minesweeper
     smassh # - Typing Game
+    zeroad
+    zeroadPackages.zeroad-data
+
 
     ### - Hyprland/Wayland Desktop Tools
     wofi # - Launcher
