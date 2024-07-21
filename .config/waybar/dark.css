@@ -79,6 +79,12 @@ window#waybar {
   margin-left: 5px;
   font-size: 26px;
   color: @sky;
+  transition: 1s;
+}
+
+#custom-launcher:hover {
+  /* transform: scale(1.1); */
+  color: @rosewater;
 }
 
 #custom-media {
