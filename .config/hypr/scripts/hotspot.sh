@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WIFI_INTERFACE="wlp0s20f3"
+WIFI_INTERFACE="wlo1"
 INTERNET_INTERFACE="lo"
 SSID="GarmJagah"
 DEFAULT_PASSWORD="hotshots"
