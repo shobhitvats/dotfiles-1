@@ -1,5 +1,7 @@
 {
     "layer": "top",
+    "margin": "10px 5px 0px 5px",
+    "position": "top",
     "modules-left": [
         "custom/launcher",
         // "custom/previous",
@@ -17,9 +19,9 @@
         "idle_inhibitor",
         "pulseaudio",
         "backlight",
+        "cpu",
+        "memory",
         "power-profiles-daemon",
-        // "cpu",
-        // "memory",
         "battery",
         "clock"
     ],
@@ -70,7 +72,7 @@
         "scroll-step": 5,
         "format": "{icon} {volume}%",
         "format-muted": " {volume}%",
-        "on-click": "pkill pwvucontrol || pwvucontrol",
+        "on-click": "pkill pavucontrol || pavucontrol",
         "on-scroll-up": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 2%+",
         "on-scroll-down": "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 2%-",
         "format-icons": {
@@ -108,7 +110,7 @@
         ]
     },
     "tray": {
-        "icon-size": 18,
+        "icon-size": 24,
         "spacing": 10
     },
     "clock": {
