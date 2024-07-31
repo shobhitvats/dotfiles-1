@@ -4,10 +4,19 @@
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: transparent;
   color: @text;
-  border-radius: 15px;
+}
+
+window#waybar > box {
   border: 2px solid black;
+  border-radius: 15px;
+  background-color: @base;
+}
+
+tooltip {
+  background-color: @crust;
+  border: 2px solid @surface2;
 }
 
 #memory,
@@ -132,23 +141,22 @@ window#waybar {
 
 /* Right Modules */
 
-#tray {
-  background-color: transparent;
+#tray, #idle_inhibitor {
+  margin: 5px;
+  padding: 5px;
   border: 0;
-  padding-right: 10px;
+  background-color: transparent;
 }
 
 #tray menu {
-  background-color: @surface0;
+  background-color: @crust;
   color: @text;
-  border: 2px solid black;
+  border: 2px solid @surface2;
 }
 
 #idle_inhibitor {
-  background-color: transparent;
-  border: 0;
-  padding-left: 0;
-  padding-right: 24px;
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
 #pulseaudio {

@@ -4,7 +4,7 @@
     let
       hostname = "nixos";
       username = "shobhit";
-      dotdir = "dotfiles";
+      dotdir = "/home/${username}/dotfiles";
       pkgs = import inputs.nixpkgs {
         inherit system;
         config.allowUnfree = true;
