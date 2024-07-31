@@ -2,16 +2,13 @@
 {
   imports = [
     ../../home-manager/bash.nix
+    ../../home-manager/environment.nix
     ../../home-manager/hyprland.nix
     ../../home-manager/nautilus
     ../../home-manager/spicetify.nix
     ../../home-manager/theme.nix
     ../../home-manager/xdg-desktop-entries.nix
   ];
-
-  home.sessionVariables = {
-    DOTDIR = dotdir;
-  };
 
   services = {
     network-manager-applet.enable = true;
@@ -57,7 +54,7 @@
     # - Terminal Emulator
     kitty = {
       enable = true;
-      theme = "Adwaita darker";
+      theme = "Catppuccin-Mocha";
       shellIntegration.enableBashIntegration = true;
       settings = {
         background_opacity = "0.8";
@@ -108,6 +105,7 @@
     libnotify # - Notifications Library
     gnome-firmware # - Firmware Updater
     mypkgs.iiserpune-login-daemon # - IISER Pune LAN Login
+    openvpn # - VPN
     localsend # - Share Files
 
     ### - Development Tools
@@ -183,7 +181,6 @@
     wofi # - Launcher
     waybar # - Bar
     mypkgs.waybar-mediaplayer
-    dunst # - Notifications Daemon
     wl-clipboard # - Wayland Copy Paste
     wlsunset # - Night Light
     hyprshade # - Custom Shaders
